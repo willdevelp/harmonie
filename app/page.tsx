@@ -1,65 +1,114 @@
-import Image from "next/image";
+import Hero from '@/components/Hero'
+// import ServicesSection from '@/components/ServicesSection'
+import  Link from 'next/link'
+import { FaHandHoldingHeart, FaClock, FaUserCheck, FaShieldAlt } from 'react-icons/fa'
 
 export default function Home() {
+  const features = [
+    {
+      icon: <FaHandHoldingHeart className="text-4xl text-[#0959a1]" />,
+      title: "Bienveillance",
+      description: "Une approche humaine et respectueuse de chaque personne"
+    },
+    {
+      icon: <FaClock className="text-4xl text-[#0959a1]" />,
+      title: "Disponibilité",
+      description: "Service 7j/7 avec des horaires adaptés à vos besoins"
+    },
+    {
+      icon: <FaUserCheck className="text-4xl text-[#0959a1]" />,
+      title: "Professionnalisme",
+      description: "Intervenants qualifiés et formés régulièrement"
+    },
+    {
+      icon: <FaShieldAlt className="text-4xl text-[#0959a1]" />,
+      title: "Sécurité",
+      description: "Personnel agréé et assuré pour votre tranquillité"
+    }
+  ]
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div>
+      <Hero />
+      
+      {/* Features Section */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <h2 className="section-title text-center text-5xl font-bold text-[#0959a1]">Pourquoi nous choisir ?</h2>
+          <p className="section-subtitle text-center max-w-2xl mx-auto">
+            Des services de qualité avec une équipe dédiée à votre bien-être
           </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            {features.map((feature, index) => (
+              <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition-all">
+                <div className="flex justify-center mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold text-[#0959a1] mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      {/* About Preview */}
+      <section className="py-12 bg-[#fef7f1]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className='space-y-5'>
+              <h2 className="section-title text-3xl">À propos de nous</h2>
+              <p className="text-gray-600">
+                Depuis plus de 10 ans, Aide & Bien-être accompagne les personnes âgées, 
+                handicapées ou dépendantes dans leur quotidien. Notre mission : leur 
+                permettre de rester chez elles dans les meilleures conditions.
+              </p>
+              <p className="text-gray-600">
+                Notre équipe d&apos;auxiliaires de vie qualifiées intervient avec bienveillance 
+                et professionnalisme pour faciliter votre vie quotidienne.
+              </p>
+              <Link 
+                href="/a-propos" 
+                className="inline-block bg-[#fdc81e] text-[#0959a1] font-semibold px-8 py-3 rounded-md hover:bg-opacity-90 transition-all"
+              >
+                En savoir plus
+              </Link>
+            </div>
+            <div className="bg-[#0959a1] bg-opacity-10 p-8 rounded-lg text-white">
+              <h3 className="text-2xl font-bold mb-4">Nos valeurs</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start space-x-3">
+                  <span className="text-[#fdc81e] text-xl">✓</span>
+                  <span>Respect et dignité de chaque personne</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-[#fdc81e] text-xl">✓</span>
+                  <span>Écoute et adaptation aux besoins</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <span className="text-[#fdc81e] text-xl">✓</span>
+                  <span>Confidentialité et discrétion</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-[#0959a1]">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Besoin d&apos;aide au quotidien ?
+          </h2>
+          <p className="text-white text-opacity-90 text-lg mb-8 max-w-2xl mx-auto">
+            Contactez-nous pour un devis personnalisé et gratuit
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-[#fdc81e] text-[#0959a1] font-semibold px-10 py-4 rounded-md text-lg hover:bg-opacity-90 transition-all"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Demander un devis
+          </Link>
         </div>
-      </main>
+      </section>
     </div>
-  );
+  )
 }
