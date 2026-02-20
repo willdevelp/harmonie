@@ -14,14 +14,22 @@ export default function Contact() {
 
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     })
   }
 
-  const handleSubmit = (e) => {
+  interface FormData {
+    nom: string
+    email: string
+    telephone: string
+    sujet: string
+    message: string
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault()
     // Ici vous ajouteriez la logique d'envoi du formulaire
     console.log('Formulaire soumis:', formData)
@@ -173,7 +181,7 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  rows="6"
+                  rows={6}
                   required
                   value={formData.message}
                   onChange={handleChange}
