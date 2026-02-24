@@ -54,7 +54,7 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 bg-[#fef7f1]">
+      <section className="py-16 bg-[#fef7f1] px-10">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -73,7 +73,7 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="section-title">Services sur mesure</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Services sur mesure</h2>
             <p className="text-gray-600 mb-8">
               Chaque personne est unique. Nous adaptons nos interventions à vos besoins spécifiques 
               et à votre rythme de vie. Nos intervenants sont formés pour répondre à toutes les situations.

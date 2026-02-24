@@ -3,7 +3,7 @@ import { FaHeart, FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, Fa
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0959a1] text-white mt-16">
+    <footer className="bg-[#0959a1] text-white px-10">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}

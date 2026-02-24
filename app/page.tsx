@@ -27,15 +27,29 @@ export default function Home() {
     }
   ]
 
+  const testimonials = [
+    {
+      name: "Marie Dupont",
+      feedback: "Grâce à Aide & Bien-être, ma mère peut rester chez elle en toute sécurité. Le personnel est formidable !"
+    },
+    {
+      name: "Jean Martin",
+      feedback: "Service impeccable et très professionnel. Je recommande vivement pour tous ceux qui ont besoin d'aide à domicile."
+    },
+    {
+      name: "Sophie Bernard",
+      feedback: "Une équipe à l'écoute et très compétente. Ils ont vraiment amélioré la qualité de vie de mon père."
+    }
+  ]
   return (
     <div>
       <Hero />
       
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white px-10">
         <div className="container-custom">
-          <h2 className="section-title text-center text-5xl font-bold text-[#0959a1]">Pourquoi nous choisir ?</h2>
-          <p className="section-subtitle text-center max-w-2xl mx-auto">
+          <h2 className="lg:text-5xl md:text-4xl mb-4 text-center font-bold text-[#0959a1]">Pourquoi nous choisir ?</h2>
+          <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
             Des services de qualité avec une équipe dédiée à votre bien-être
           </p>
           
@@ -52,10 +66,10 @@ export default function Home() {
       </section>
 
       {/* About Preview */}
-      <section className="py-12 bg-[#fef7f1]">
+      <section className="py-12 bg-[#fef7f1] px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className='space-y-5'>
-              <h2 className="section-title text-3xl">À propos de nous</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-3xl">À propos de nous</h2>
               <p className="text-gray-600">
                 Depuis plus de 10 ans, Aide & Bien-être accompagne les personnes âgées, 
                 handicapées ou dépendantes dans leur quotidien. Notre mission : leur 
@@ -107,6 +121,25 @@ export default function Home() {
           >
             Demander un devis
           </Link>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 bg-white px-10">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0959a1] mb-4 text-center">Témoignages</h2>
+          <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Ce que nos clients disent de nous
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-[#fef7f1] p-6 rounded-lg shadow-md">
+                <p className="text-gray-600 mb-4 h-20">&quot;{testimonial.feedback}&quot;</p>
+                <h3 className="text-lg font-semibold text-[#0959a1]">{testimonial.name}</h3>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>

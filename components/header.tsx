@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { FaHeart, FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Header() {
   const pathname = usePathname()
@@ -17,15 +18,13 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white shadow-md sticky top-0 z-50 px-10">
       <nav className="container-custom py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-[#0959a1] rounded-full flex items-center justify-center">
-              <FaHeart className="text-white text-xl" />
-            </div>
-            <span className="text-2xl font-bold text-[#0959a1]">Aide & Bien-être</span>
+            <Image src="/logo.png" alt="Logo Aide & Bien-être" width={60} height={50} />
+            <span className="text-2xl font-bold text-[#0959a1]">Harmonie & Autonomie</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -43,9 +42,9 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <button className="btn-[#0959a1] bg-[#0959a1] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-all">
+            {/* <button className="btn-[#0959a1] bg-[#0959a1] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-all">
               Devis gratuit
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,9 +72,9 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <button className="bg-[#0959a1] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-all w-full">
+              {/* <button className="bg-[#0959a1] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-all w-full">
                 Devis gratuit
-              </button>
+              </button> */}
             </div>
           </div>
         )}
