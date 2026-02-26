@@ -41,13 +41,13 @@ export default function Contact() {
     {
       icon: <FaPhone className="text-2xl" />,
       title: "Téléphone",
-      content: "01 23 45 67 89",
+      content: "0743587281",
       description: "Lun-Ven : 9h-18h"
     },
     {
       icon: <FaEnvelope className="text-2xl" />,
       title: "Email",
-      content: "contact@aide-bienetre.fr",
+      content: "laetitia@harmonie-autonomie.fr",
       description: "Réponse sous 24h"
     },
     {
@@ -59,7 +59,7 @@ export default function Contact() {
     {
       icon: <FaClock className="text-2xl" />,
       title: "Horaires",
-      content: "7j/7, 24h/24",
+      content: "7j/7, 12h/24",
       description: "Service d'urgence disponible"
     }
   ]
@@ -68,7 +68,7 @@ export default function Contact() {
     <div>
       {/* Hero */}
       <section className="bg-[#0959a1] text-white py-16">
-        <div className="container-custom text-center">
+        <div className="container-custom text-center px-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contactez-nous</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Une question ? Un projet ? Notre équipe est là pour vous répondre
@@ -93,7 +93,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white px-10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Envoyez-nous un message</h2>

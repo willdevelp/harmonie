@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FaHeart, FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -9,10 +10,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-[#fdc81e] rounded-full flex items-center justify-center">
-                <FaHeart className="text-[#0959a1] text-xl" />
-              </div>
-              <span className="text-xl font-bold">Aide & Bien-être</span>
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={60}
+                height={60}
+                className='rounded-full'
+               />
+                <span className="text-xl font-bold">Harmonie & <br /> Autonomie</span>
             </div>
             <p className="text-white text-opacity-90">
               Des services à la personne professionnels et bienveillants pour votre quotidien.
@@ -36,11 +41,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <FaPhone className="text-[#fdc81e]" />
-                <span>01 23 45 67 89</span>
+                <span>0743587281</span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-[#fdc81e]" />
-                <span>contact@aide-bienetre.fr</span>
+                <span>laetitia@harmonie-autonomie.fr</span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-[#fdc81e]" />

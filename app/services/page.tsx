@@ -45,7 +45,7 @@ export default function Services() {
     <div>
       {/* Hero */}
       <section className="bg-[#0959a1] text-white py-16">
-        <div className="container-custom text-center">
+        <div className="container-custom text-center px-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Nos services</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Des prestations adaptées à vos besoins pour un accompagnement sur mesure
@@ -71,7 +71,7 @@ export default function Services() {
 
       {/* Informations complémentaires */}
       <section className="py-16 bg-white">
-        <div className="container-custom">
+        <div className="container-custom px-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Services sur mesure</h2>
             <p className="text-gray-600 mb-8">

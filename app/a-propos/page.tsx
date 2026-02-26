@@ -58,8 +58,8 @@ export default function APropos() {
     <div className="">
       {/* Hero Section */}
       <section className="bg-[#0959a1] text-white py-16">
-        <div className="container-custom text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold">À propos de nous</h1>
+        <div className="container-custom text-center space-y-4 px-10">
+          <h1 className="text-4xl lg:text-5xl font-bold">À propos de nous</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Découvrez l&apos;histoire et les valeurs d&apos;Aide & Bien-être
           </p>
@@ -67,11 +67,11 @@ export default function APropos() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white px-10">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center my-2 ">
                 <div className="text-4xl text-[#fdc81e] mb-2 flex justify-center">
                   {stat.icon}
                 </div>
@@ -119,7 +119,7 @@ export default function APropos() {
       {/* Valeurs */}
       <section className="py-16 bg-white">
         <div>
-          <h2 className="lg:text-5xl md:text-4xl mb-4 text-center font-bold text-[#0959a1]">Nos Valeurs</h2>
+          <h2 className="text-4xl lg:text-5xl mb-4 text-center font-bold text-[#0959a1]">Nos Valeurs</h2>
           <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
             Des principes fondamentaux qui guident notre action au quotidien
           </p>
@@ -137,7 +137,7 @@ export default function APropos() {
       {/* Équipe */}
       <section className="py-16 bg-white">
         <div className="container-custom">
-          <h2 className="lg:text-5xl md:text-4xl mb-4 text-center font-bold text-[#0959a1]">Notre équipe</h2>
+          <h2 className="lg:text-5xl text-4xl mb-4 text-center font-bold text-[#0959a1]">Notre équipe</h2>
           <p className="text-lg text-gray-600 mb-8 text-center max-w-2xl mx-auto">
             Des professionnels passionnés à votre service
           </p>

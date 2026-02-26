@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-r from-[#0959a1] to-[#0959a1]/80 text-white text-center">
+    <section className="relative bg-gradient-to-r from-[#0959a1] to-[#0959a1]/80 text-white px-10 text-center">
       <div className="py-20 md:py-28">
         <div className="">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">

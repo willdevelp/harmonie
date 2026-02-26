@@ -6,22 +6,22 @@ import { FaHandHoldingHeart, FaClock, FaUserCheck, FaShieldAlt } from 'react-ico
 export default function Home() {
   const features = [
     {
-      icon: <FaHandHoldingHeart className="text-4xl text-[#0959a1]" />,
+      icon: <FaHandHoldingHeart className="text-4xl text-[#fdc81e]" />,
       title: "Bienveillance",
       description: "Une approche humaine et respectueuse de chaque personne"
     },
     {
-      icon: <FaClock className="text-4xl text-[#0959a1]" />,
+      icon: <FaClock className="text-4xl text-[#fdc81e]" />,
       title: "Disponibilité",
       description: "Service 7j/7 avec des horaires adaptés à vos besoins"
     },
     {
-      icon: <FaUserCheck className="text-4xl text-[#0959a1]" />,
+      icon: <FaUserCheck className="text-4xl text-[#fdc81e]" />,
       title: "Professionnalisme",
       description: "Intervenants qualifiés et formés régulièrement"
     },
     {
-      icon: <FaShieldAlt className="text-4xl text-[#0959a1]" />,
+      icon: <FaShieldAlt className="text-4xl text-[#fdc81e]" />,
       title: "Sécurité",
       description: "Personnel agréé et assuré pour votre tranquillité"
     }
@@ -107,17 +107,17 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#0959a1]">
+      <section className="py-16 bg-[#fdc81e] px-10">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0959a1] mb-4">
             Besoin d&apos;aide au quotidien ?
           </h2>
-          <p className="text-white text-opacity-90 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-[#0959a1] text-opacity-90 text-lg mb-8 max-w-2xl mx-auto">
             Contactez-nous pour un devis personnalisé et gratuit
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-[#fdc81e] text-[#0959a1] font-semibold px-10 py-4 rounded-md text-lg hover:bg-opacity-90 transition-all"
+            className="inline-block bg-[#0959a1] text-white font-semibold px-10 py-4 rounded-md text-lg hover:bg-opacity-90 transition-all"
           >
             Demander un devis
           </Link>
