@@ -125,7 +125,7 @@ export default function APropos() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 rounded">
             {values.map((value, index) => (
-              <div key={index} className="bg-[#fef7f1] p-6 rounded-lg text-center">
+              <div key={index} className="bg-[#fef7f1] p-6 rounded-lg text-center hover:shadow-lg transition-all">
                 <h3 className="text-xl font-bold text-[#0959a1] mb-2">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>

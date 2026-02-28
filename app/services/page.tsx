@@ -5,39 +5,33 @@ export default function Services() {
   const services = [
     {
       icon: <FaHandSparkles className="text-4xl" />,
-      title: "Aide à la personne",
-      description: "Toilette, habillage, déplacement, aide aux gestes quotidiens",
-      price: "À partir de 22€/h"
+      title: "Accompagnement à domicile",
+      description: "Routines éducatives, organisation du temps, soutien au quotidien, stimulation cognitive.",
     },
     {
       icon: <FaUtensils className="text-4xl" />,
-      title: "Préparation des repas",
-      description: "Repas équilibrés adaptés à vos besoins et régimes alimentaires",
-      price: "À partir de 20€/h"
+      title: "Habiletés sociales & émotions",
+      description: "Gestion des émotions, comportements, scénarios sociaux, interactions et communication."
     },
     {
       icon: <FaBroom className="text-4xl" />,
-      title: "Entretien du logement",
-      description: "Ménage, repassage, rangement pour un intérieur propre et sain",
-      price: "À partir de 18€/h"
+      title: "Hygiène & gestes du quotidien",
+      description: "Apprentissage des routines d’hygiène (faire avec, respecter le rythme et l’intimité)."
     },
     {
       icon: <FaShoppingCart className="text-4xl" />,
-      title: "Courses et accompagnement",
-      description: "Accompagnement aux courses ou courses livrées à domicile",
-      price: "À partir de 18€/h"
+      title: " Guidance parentale",
+      description: "Outils concrets, prévention des crises, soutien à l’organisation familiale.",
     },
     {
       icon: <FaCar className="text-4xl" />,
-      title: "Transport et sorties",
-      description: "Accompagnement aux rendez-vous, promenades, activités",
-      price: "À partir de 22€/h"
+      title: "Lien école & partenaires",
+      description: "Coordination possible avec l’école et les professionnels (ergothérapeute, orthophoniste…).",
     },
     {
       icon: <FaHeartbeat className="text-4xl" />,
-      title: "Garde de nuit",
-      description: "Présence rassurante et assistance pendant la nuit",
-      price: "Sur devis"
+      title: "Démarches & parcours",
+      description: "Aide à la compréhension des démarches et orientations (ex. MDPH) — selon besoins.",
     }
   ]
 
@@ -62,9 +56,36 @@ export default function Services() {
                 <div className="text-[#0959a1] mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-[#0959a1] mb-2">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                <p className="text-[#fdc81e] font-semibold">{service.price}</p>
+                {/* <p className="text-[#fdc81e] font-semibold">{service.price}</p> */}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Déroulement du service */}
+      <section className="py-16 bg-white px-10">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Comment ça marche ?</h2>
+          <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            Un processus simple et transparent pour vous accompagner pas à pas
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="text-center p-6 rounded-lg shadow-lg transition-all">
+              <div className="text-[#0959a1] font-bold border border-[#0959a1] rounded-full mb-4 flex justify-center w-12 h-12 items-center mx-auto">1</div>
+              <h3 className="text-xl font-semibold text-[#0959a1] mb-2">Évaluation initiale</h3>
+              <p className="text-gray-600">Analyse du quotidien, des besoins, des priorités. Proposition personnalisée et objectifs concrets.</p>
+            </div>
+            <div className="text-center p-6 rounded-lg shadow-lg transition-all">
+              <div className="text-[#0959a1] font-bold border border-[#0959a1] rounded-full mb-4 flex justify-center w-12 h-12 items-center mx-auto">2</div>
+              <h3 className="text-xl font-semibold text-[#0959a1] mb-2">Mise en place</h3>
+              <p className="text-gray-600">Interventions régulières, outils adaptés (supports visuels, séquençage, routines)..</p>
+            </div>
+            <div className="text-center p-6 rounded-lg shadow-lg transition-all">
+              <div className="text-[#0959a1] font-bold border border-[#0959a1] rounded-full mb-4 flex justify-center w-12 h-12 items-center mx-auto">3</div>
+              <h3 className="text-xl font-semibold text-[#0959a1] mb-2">Suivi & ajustements</h3>
+              <p className="text-gray-600">Points réguliers avec la famille, coordination si nécessaire, adaptation continue.</p>
+            </div>
           </div>
         </div>
       </section>
