@@ -71,17 +71,17 @@ export default function Services() {
             Un processus simple et transparent pour vous accompagner pas à pas
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center p-6 rounded-lg shadow-lg transition-all">
+            <div className="text-center p-6 rounded-lg shadow-lg transition-all hover:shadow-xl">
               <div className="text-[#0959a1] font-bold border border-[#0959a1] rounded-full mb-4 flex justify-center w-12 h-12 items-center mx-auto">1</div>
               <h3 className="text-xl font-semibold text-[#0959a1] mb-2">Évaluation initiale</h3>
               <p className="text-gray-600">Analyse du quotidien, des besoins, des priorités. Proposition personnalisée et objectifs concrets.</p>
             </div>
-            <div className="text-center p-6 rounded-lg shadow-lg transition-all">
+            <div className="text-center p-6 rounded-lg shadow-lg transition-all hover:shadow-xl">
               <div className="text-[#0959a1] font-bold border border-[#0959a1] rounded-full mb-4 flex justify-center w-12 h-12 items-center mx-auto">2</div>
               <h3 className="text-xl font-semibold text-[#0959a1] mb-2">Mise en place</h3>
               <p className="text-gray-600">Interventions régulières, outils adaptés (supports visuels, séquençage, routines)..</p>
             </div>
-            <div className="text-center p-6 rounded-lg shadow-lg transition-all">
+            <div className="text-center p-6 rounded-lg shadow-lg transition-all hover:shadow-xl">
               <div className="text-[#0959a1] font-bold border border-[#0959a1] rounded-full mb-4 flex justify-center w-12 h-12 items-center mx-auto">3</div>
               <h3 className="text-xl font-semibold text-[#0959a1] mb-2">Suivi & ajustements</h3>
               <p className="text-gray-600">Points réguliers avec la famille, coordination si nécessaire, adaptation continue.</p>

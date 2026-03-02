@@ -42,7 +42,7 @@ export default function Contact() {
       icon: <FaPhone className="text-2xl" />,
       title: "Téléphone",
       content: "0743587281",
-      description: "Lun-Ven : 9h-18h"
+      description: "Lun-Ven : 9h-17h"
     },
     {
       icon: <FaEnvelope className="text-2xl" />,
@@ -53,8 +53,8 @@ export default function Contact() {
     {
       icon: <FaMapMarkerAlt className="text-2xl" />,
       title: "Adresse",
-      content: "123 Rue des Services",
-      description: "75001 Paris"
+      content: "Haut‑Rhin",
+      description: "68"
     },
     {
       icon: <FaClock className="text-2xl" />,
@@ -201,6 +201,9 @@ export default function Contact() {
               </p>
             </form>
           </div>
+        </div>
+        <div>
+
         </div>
       </section>
     </div>
