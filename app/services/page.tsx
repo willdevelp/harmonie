@@ -1,35 +1,35 @@
 import Link from 'next/link'
-import { FaHandSparkles, FaUtensils, FaBroom, FaShoppingCart, FaCar, FaHeartbeat } from 'react-icons/fa'
+import { FaHandsHelping, FaBrain, FaSoap, FaHandshake, FaSchool, FaRegCheckSquare } from 'react-icons/fa'
 
 export default function Services() {
   const services = [
     {
-      icon: <FaHandSparkles className="text-4xl" />,
+      icon: <FaHandsHelping className="text-4xl text-[#0959a1]" />,
       title: "Accompagnement à domicile",
       description: "Routines éducatives, organisation du temps, soutien au quotidien, stimulation cognitive.",
     },
     {
-      icon: <FaUtensils className="text-4xl" />,
+      icon: <FaBrain className="text-4xl text-[#0959a1]" />,
       title: "Habiletés sociales & émotions",
       description: "Gestion des émotions, comportements, scénarios sociaux, interactions et communication."
     },
     {
-      icon: <FaBroom className="text-4xl" />,
+      icon: <FaSoap className="text-4xl text-[#0959a1]" />,
       title: "Hygiène & gestes du quotidien",
       description: "Apprentissage des routines d’hygiène (faire avec, respecter le rythme et l’intimité)."
     },
     {
-      icon: <FaShoppingCart className="text-4xl" />,
+      icon: <FaHandshake className="text-4xl text-[#0959a1]" />,
       title: " Guidance parentale",
       description: "Outils concrets, prévention des crises, soutien à l’organisation familiale.",
     },
     {
-      icon: <FaCar className="text-4xl" />,
+      icon: <FaSchool className="text-4xl text-[#0959a1]" />,
       title: "Lien école & partenaires",
       description: "Coordination possible avec l’école et les professionnels (ergothérapeute, orthophoniste…).",
     },
     {
-      icon: <FaHeartbeat className="text-4xl" />,
+      icon: <FaRegCheckSquare className="text-4xl text-[#0959a1]" />,
       title: "Démarches & parcours",
       description: "Aide à la compréhension des démarches et orientations (ex. MDPH) — selon besoins.",
     }
@@ -91,7 +91,7 @@ export default function Services() {
       </section>
 
       {/* Informations complémentaires */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#fef7f1]">
         <div className="container-custom px-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Services sur mesure</h2>
@@ -100,17 +100,17 @@ export default function Services() {
               et à votre rythme de vie. Nos intervenants sont formés pour répondre à toutes les situations.
             </p>
             
-            <div className="bg-[#fef7f1] p-8 rounded-lg">
-              <h3 className="text-xl font-bold text-[#0959a1] mb-4">Avantages fiscaux</h3>
+            <div className=" p-8 rounded-lg">
+              {/* <h3 className="text-xl font-bold text-[#0959a1] mb-4">Avantages fiscaux</h3>
               <p className="text-gray-600 mb-4">
                 Bénéficiez d&apos;un crédit d&apos;impôt de 50% sur le montant de vos prestations 
                 (dans la limite légale).
-              </p>
+              </p> */}
               <Link
                 href="/contact"
                 className="inline-block bg-[#0959a1] text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition-all"
               >
-                Demander un devis personnalisé
+                Demander une consultation personnalisée
               </Link>
             </div>
           </div>

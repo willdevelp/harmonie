@@ -40,15 +40,15 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-[#fdc81e] pb-2">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
-                <FaPhone className="text-[#fdc81e]" />
+                <FaPhone className="" />
                 <span>0743587281</span>
               </li>
               <li className="flex items-center space-x-3">
-                <FaEnvelope className="text-[#fdc81e]" />
+                <FaEnvelope className="" />
                 <span>laetitia@harmonie-autonomie.fr</span>
               </li>
               <li className="flex items-center space-x-3">
-                <FaMapMarkerAlt className="text-[#fdc81e]" />
+                <FaMapMarkerAlt className="" />
                 <span>123 Rue des Services, 75001 Paris</span>
               </li>
             </ul>
@@ -58,13 +58,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-[#fdc81e] pb-2">Suivez-nous</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#fdc81e] transition text-2xl">
-                <FaFacebook />
+              <a href="#" className="text-white  transition text-2xl">
+                <FaFacebook color="white"/>
               </a>
-              <a href="#" className="text-white hover:text-[#fdc81e] transition text-2xl">
+              <a href="#" className="text-white transition text-2xl">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-white hover:text-[#fdc81e] transition text-2xl">
+              <a href="#" className="text-white transition text-2xl">
                 <FaInstagram />
               </a>
             </div>
@@ -73,7 +73,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-white text-opacity-80">
-          <p>&copy; 2024 Aide & Bien-être. Tous droits réservés.</p>
+          <p>&copy; 2026 Harmonie & Autonomie. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

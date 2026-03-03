@@ -166,7 +166,7 @@ export default function Contact() {
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0959a1]"
                   >
                     <option value="">Sélectionnez un sujet</option>
-                    <option value="devis">Demande de devis</option>
+                    <option value="consultation">Demande de consultation</option>
                     <option value="information">Demande d&apos;information</option>
                     <option value="rendez-vous">Prise de rendez-vous</option>
                     <option value="autre">Autre</option>
