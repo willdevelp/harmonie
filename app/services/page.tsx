@@ -100,7 +100,7 @@ export default function Services() {
               et à votre rythme de vie. Nos intervenants sont formés pour répondre à toutes les situations.
             </p>
             
-            <div className=" p-8 rounded-lg">
+            <div className="rounded-lg">
               {/* <h3 className="text-xl font-bold text-[#0959a1] mb-4">Avantages fiscaux</h3>
               <p className="text-gray-600 mb-4">
                 Bénéficiez d&apos;un crédit d&apos;impôt de 50% sur le montant de vos prestations 

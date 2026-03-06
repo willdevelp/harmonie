@@ -53,8 +53,8 @@ export default function Contact() {
     {
       icon: <FaMapMarkerAlt className="text-2xl" />,
       title: "Adresse",
-      content: "Haut‑Rhin",
-      description: "68"
+      content: "Rixheim",
+      description: "68170"
     },
     {
       icon: <FaClock className="text-2xl" />,

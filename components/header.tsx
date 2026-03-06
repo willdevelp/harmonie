@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="Logo Aide & Bien-être" width={50} height={40} />
+            <Image src="/logo.png" alt="Logo Harmonie & Autonomie" width={50} height={40} />
             <span className="font-bold text-[#0959a1]">Harmonie & <br /> Autonomie</span>
           </Link>
 

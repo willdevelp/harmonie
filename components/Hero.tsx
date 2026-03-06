@@ -8,10 +8,10 @@ export default function Hero() {
       <div className="py-10 space-y-8 md:py-10 md:flex items-center justify-between gap-12">
         <div className="w-full lg:w-1/2">
           <h1 className="text-3xl md:text-3xl lg:text-6xl font-bold mb-6">
-            Parce que chaque personne mérite un accompagnement
+            Accompagner chaque enfant vers plus d’autonomie
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90">
-            Nous aidons enfants, familles et proches à avancer sereinement grâce à un accompagnement adapté à leurs besoins.
+            Nous accompagnons à domicile les enfants présentant des TSA, des troubles DYS et des handicaps moteurs afin de soutenir leur autonomie, leur développement et leur inclusion.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
@@ -33,13 +33,6 @@ export default function Hero() {
           <Image src="/popo.jpeg" alt="Hero image" width={200} height={200} className="w-full md:h-110 rounded-lg shadow-lg" />
         </div>
       </div>
-      
-      {/* Wave decoration */}
-      {/* <div className="absolute bottom-0 left-0 right-0 mt-20">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#fef7f1" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-      </div> */}
     </section>
   )
 }

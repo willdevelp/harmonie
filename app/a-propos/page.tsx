@@ -61,7 +61,7 @@ export default function APropos() {
         <div className="container-custom text-center space-y-4 px-10">
           <h1 className="text-4xl lg:text-5xl font-bold">À propos de nous</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Découvrez l&apos;histoire et les valeurs d&apos;Aide & Bien-être
+            Découvrez l&apos;histoire et les valeurs d&apos;Harmonie & Autonomie
           </p>
         </div>
       </section>

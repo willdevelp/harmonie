@@ -8,7 +8,7 @@ export default function Home() {
     {
       icon: <FaHandHoldingHeart className="text-4xl text-[#0959a1]" />,
       title: "Bienveillance",
-      description: "Une approche humaine et respectueuse de chaque personne"
+      description: "Une approche humaine et respectueuse de chaque enfant"
     },
     {
       icon: <FaClock className="text-4xl text-[#0959a1]" />,
@@ -30,7 +30,7 @@ export default function Home() {
   const testimonials = [
     {
       name: "Marie Dupont",
-      feedback: "Grâce à Aide & Bien-être, ma mère peut rester chez elle en toute sécurité. Le personnel est formidable !"
+      feedback: "Grâce à Harmonie & Autonomie, ma mère peut rester chez elle en toute sécurité. Le personnel est formidable !"
     },
     {
       name: "Jean Martin",
@@ -71,9 +71,9 @@ export default function Home() {
             <div className='space-y-5'>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-3xl">À propos de nous</h2>
               <p className="text-gray-600">
-                Depuis plus de 10 ans, Aide & Bien-être accompagne les personnes âgées, 
-                handicapées ou dépendantes dans leur quotidien. Notre mission : leur 
-                permettre de rester chez elles dans les meilleures conditions.
+                Depuis plus de 10 ans, Harmonie & Autonomie accompagne les enfants présentant des troubles du spectre de 
+                l’autisme (TSA), des troubles du DYS et des handicaps moteurs, directement à domicile, afin de favoriser leur autonomie, 
+                leur développement et leur inclusion, en étroite collaboration avec les familles et les professionnels
               </p>
               <p className="text-gray-600">
                 Notre équipe d&apos;auxiliaires de vie qualifiées intervient avec bienveillance 
