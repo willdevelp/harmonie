@@ -51,7 +51,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
            <Link href="/contact" className="">
             <button className="hidden md:inline-flex items-center px-6 py-2 rounded-full bg-[#0959a1] text-white hover:bg-[#074a85] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95">
-              Prenez rendez-vous
+              Demandez un devis
             </button>
            </Link>
 
