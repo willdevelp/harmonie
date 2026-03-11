@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FaHandHoldingHeart, FaClock, FaUserCheck, FaShieldAlt, FaStar } from 'react-icons/fa'
+import { FaHandHoldingHeart, FaClock, FaUserCheck, FaShieldAlt, FaStar, FaArrowRight } from 'react-icons/fa'
 
 export default function Home() {
 
@@ -232,14 +232,15 @@ export default function Home() {
                 className="w-full h-60 object-cover rounded-t-md transition-transform duration-300 hover:scale-110"
               />
 
-              <div className="p-6">
+              <div className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-[#0959a1] mb-2">
                   {service.title}
                 </h3>
 
                 <p className="text-gray-600">{service.description}</p>
-              </div>
 
+                <Link href="" className="text-[#fdc81e] underline flex items-center gap-4">En savoir plus <FaArrowRight className='text-[#fdc81e]'/></Link>
+              </div>
             </motion.div>
           ))}
 
@@ -265,9 +266,9 @@ export default function Home() {
         <motion.div whileHover={{ scale: 1.05 }}>
           <Link
             href="/contact"
-            className="inline-block mt-8 bg-[#fdc81e] text-[#0959a1] font-semibold px-10 py-4 rounded-md"
+            className="inline-block mt-8 bg-[#fdc81e] text-[#0959a1] font-semibold px-5 py-4 rounded-md"
           >
-            Prenez rendez-vous
+            Demandez un devis
           </Link>
         </motion.div>
 
@@ -281,7 +282,7 @@ export default function Home() {
           Témoignages
         </h2>
 
-        <div className="grid md:grid-cols-3 space-x-8 mt-12">
+        <div className="grid md:grid-cols-3 md:space-x-8 mt-12 space-y-8 md:space-y-0">
 
           {testimonials.map((testimonial, index) => (
             <motion.div
