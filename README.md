@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Harmonie & Autonomie
 
-## Getting Started
+![Harmonie & Autonomie](public/logo.png)
 
-First, run the development server:
+Site web moderne et responsive pour une agence d'aide à domicile spécialisée dans l'accompagnement des personnes âgées et des enfants présentant des troubles du neurodéveloppement.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🎯 Aperçu
+
+Harmonie & Autonomie est une plateforme web conçue pour présenter les services d'aide à domicile, permettre aux familles de découvrir l'équipe, et faciliter la prise de contact. Le site met en avant une approche bienveillante et professionnelle avec un design moderne et intuitif.
+
+### 🏠 Pages principales
+
+- **Accueil** : Présentation globale des services, statistiques, témoignages
+- **À propos** : Histoire de l'entreprise, valeurs, équipe, engagements
+- **Services** : Détail des prestations, processus d'accompagnement, FAQ
+- **Contact** : Formulaire de contact, coordonnées, carte interactive
+- **Politique de confidentialité** : Informations RGPD, mentions légales
+
+## 🚀 Technologies utilisées
+
+- **Framework** : [Next.js 15](https://nextjs.org/) (App Router)
+- **Langage** : [TypeScript](https://www.typescriptlang.org/)
+- **Styling** : [Tailwind CSS](https://tailwindcss.com/)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/)
+- **Icônes** : [Lucide React](https://lucide.netlify.app/)
+- **Déploiement** : [Vercel](https://vercel.com/)
+
+## ✨ Fonctionnalités
+
+- ✅ Design responsive (mobile, tablette, desktop)
+- ✅ Animations fluides au scroll
+- ✅ Navigation intuitive avec header sticky
+- ✅ Menu mobile optimisé
+- ✅ Formulaire de contact avec validation
+- ✅ Carte interactive Google Maps
+- ✅ Timeline interactive pour l'histoire de l'entreprise
+- ✅ FAQ avec accordéon
+- ✅ Optimisation SEO de base
+- ✅ Accessibilité améliorée
+
+## 🎨 Palette de couleurs
+
+- **Bleu principal** : `#0959a1` - Confiance, professionnalisme, sérénité
+- **Jaune accent** : `#fdc81e` - Chaleur, bienveillance, énergie positive
+- **Blanc/Gris** : Fonds neutres pour une lecture confortable
+
+## 📦 Installation
+
+1. **Cloner le repository**
+
+   ```bash
+   git clone https://github.com/willdevelp/harmonie
+   cd harmonie
+   ```
+
+2. **Installer les dépendances**
+
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   ```
+
+3. **Lancer le serveur de développement**
+
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   ```
+
+4. **Ouvrir le navigateur**
+   ```
+   http://localhost:3000
+   ```
+
+## 🏗️ Structure du projet
+
+```
+harmonie/
+├── app/
+│   ├── a-propos/          # Page À propos
+│   ├── contact/            # Page Contact
+│   ├── politique-de-confidentialite/ # Page RGPD
+│   ├── services/           # Page Services
+│   ├── layout.tsx          # Layout principal
+│   └── page.tsx            # Page d'accueil
+├── components/
+│   ├── header.tsx          # Navigation principale
+│   └── footer.tsx          # Pied de page
+├── public/                 # Images et assets
+│   ├── logo.png
+│   ├── hand.jpeg
+│   ├── ladies.jpeg
+│   └── ...
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Déploiement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Le site est optimisé pour un déploiement sur [Vercel](https://vercel.com/) :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# ou
+vercel --prod
+```
 
-## Learn More
+## 👥 Contributeurs
 
-To learn more about Next.js, take a look at the following resources:
+Ce projet a été réalisé par une équipe de deux développeurs passionnés :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### [William](https://github.com/willdevelp/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Architecture du projet
+- Développement des composants principaux
+- Design system et charte graphique
 
-## Deploy on Vercel
+### [Kilua Zoldick](https://github.com/kiluazoldick)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Structure des pages
+- Implémentation du responsive
+- Intégration des animations
+- Optimisation des performances
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+
+Ce projet est la propriété d'Harmonie & Autonomie. Tous droits réservés.
+
+## 📞 Contact
+
+Pour toute question concernant ce projet :
+
+- **Email** : laetitia@harmonie-autonomie.fr
+- **Téléphone** : 07 43 58 72 81
+
+---
+
+Développé avec ❤️ pour améliorer le quotidien des familles
