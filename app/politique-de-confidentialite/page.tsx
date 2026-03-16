@@ -285,7 +285,7 @@ export default function PolitiqueDeConfidentialite() {
                       href="mailto:rgpd@harmonie-autonomie.fr"
                       className="text-white/80 hover:text-white"
                     >
-                      rgpd@harmonie-autonomie.fr
+                      contact@harmonie-autonomie.fr
                     </a>
                   </div>
                 </div>

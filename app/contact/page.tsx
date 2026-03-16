@@ -80,16 +80,16 @@ export default function Contact() {
       icon: <Phone className="w-6 h-6" />,
       title: "Téléphone",
       value: "07 43 58 72 81",
-      description: "Lun-Ven : 9h-19h | Sam : 9h-17h",
+      description: "Lun-Ven : 9h-17h",
       action: "tel:0743587281",
       bg: "bg-blue-50",
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "laetitia@harmonie-autonomie.fr",
+      value: "contact@harmonie-autonomie.fr",
       description: "Réponse sous 24h ouvrées",
-      action: "mailto:laetitia@harmonie-autonomie.fr",
+      action: "mailto:contact@harmonie-autonomie.fr",
       bg: "bg-yellow-50",
     },
     {
@@ -103,7 +103,7 @@ export default function Contact() {
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Horaires",
-      value: "7j/7, 24h/24",
+      value: "7j/7, 12h/24",
       description: "Service d'urgence disponible",
       action: null,
       bg: "bg-purple-50",
@@ -119,7 +119,7 @@ export default function Contact() {
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Soutien psychologique",
-      description: "Besoin de parler ? Nous sommes là 24h/24",
+      description: "Besoin de parler ? Nous sommes là 12h/24",
     },
     {
       icon: <Home className="w-8 h-8" />,
@@ -133,8 +133,8 @@ export default function Contact() {
       name: "Laetitia Lomami",
       role: "Fondatrice & Directrice",
       phone: "06 12 34 56 78",
-      email: "laetitia@harmonie-autonomie.fr",
-      disponibilite: "Lun-Ven 9h-18h",
+      email: "contact@harmonie-autonomie.fr",
+      disponibilite: "Lun-Ven 9h-17h",
     },
     {
       name: "Marie Dupont",
@@ -148,9 +148,24 @@ export default function Contact() {
       role: "Responsable des interventions",
       phone: "06 34 56 78 90",
       email: "thomas@harmonie-autonomie.fr",
-      disponibilite: "7j/7 24h/24",
+      disponibilite: "7j/7 12h/24",
     },
   ];
+
+  const mentions = [
+    {
+      name: "SIRET",
+      description: "10020568100016"
+    },
+    {
+      name: "N°déclaration/agrément SAP",
+      description: "IDBIVDBIUDBIU"
+    },
+    {
+      name:"Responsable de publication",
+      description: "Laetitia Lomami"
+    }
+  ]
 
   return (
     <div className="overflow-hidden">
@@ -348,10 +363,10 @@ export default function Contact() {
                       <option value="information">
                         Demande d&apos;information
                       </option>
-                      <option value="rendez-vous">Prise de rendez-vous</option>
+                      {/* <option value="rendez-vous">Prise de rendez-vous</option>
                       <option value="urgence">Situation d&apos;urgence</option>
                       <option value="reclamation">Réclamation</option>
-                      <option value="autre">Autre</option>
+                      <option value="autre">Autre</option> */}
                     </select>
                   </div>
                 </div>
@@ -463,18 +478,17 @@ export default function Contact() {
               {/* Urgences */}
               <div className="bg-[#0959a1] p-8 rounded-2xl shadow-xl text-white">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <Shield className="w-6 h-6 text-[#fdc81e]" />
-                  Besoin d&apos;aide en urgence ?
+                 Mentions Légales
                 </h3>
 
-                <div className="space-y-4">
-                  {urgences.map((item, index) => (
+                <div className="space-y-7">
+                  {mentions.map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-[#fdc81e] flex-shrink-0">
+                      {/* <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-[#fdc81e] flex-shrink-0">
                         {item.icon}
-                      </div>
+                      </div> */}
                       <div>
-                        <h4 className="font-semibold">{item.title}</h4>
+                        <h4 className="font-semibold">{item.name}</h4>
                         <p className="text-sm text-white/80">
                           {item.description}
                         </p>
@@ -483,7 +497,7 @@ export default function Contact() {
                   ))}
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-white/20">
+                {/* <div className="mt-6 pt-6 border-t border-white/20">
                   <a
                     href="tel:0743587281"
                     className="flex items-center justify-between bg-[#fdc81e] text-[#0959a1] px-6 py-3 rounded-xl font-semibold hover:bg-opacity-90 transition-all"
@@ -494,7 +508,7 @@ export default function Contact() {
                     </span>
                     <ChevronRight className="w-5 h-5" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           </div>
@@ -502,7 +516,7 @@ export default function Contact() {
       </section>
 
       {/* TEAM CONTACTS */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -571,10 +585,10 @@ export default function Contact() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* HORAIRES DÉTAILLÉS */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-WHITE">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
@@ -591,8 +605,8 @@ export default function Contact() {
 
                 <div className="space-y-4">
                   {[
-                    { day: "Lundi - Vendredi", hours: "9h00 - 19h00" },
-                    { day: "Samedi", hours: "9h00 - 17h00" },
+                    { day: "Lundi - Vendredi", hours: "9h00 - 17h00" },
+                    { day: "Samedi", hours: "Fermé" },
                     { day: "Dimanche", hours: "Fermé (urgences uniquement)" },
                   ].map((item, index) => (
                     <div
@@ -622,7 +636,7 @@ export default function Contact() {
                 </h3>
 
                 <p className="mb-6 text-white/90">
-                  Notre service d&apos;urgence est disponible 24h/24 et 7j/7
+                  Notre service d&apos;urgence est disponible 12h/24 et 7j/7
                   pour toute situation nécessitant une intervention rapide.
                 </p>
 
@@ -640,7 +654,7 @@ export default function Contact() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -670,7 +684,7 @@ export default function Contact() {
               </Link>
 
               <Link
-                href="mailto:laetitia@harmonie-autonomie.fr"
+                href="mailto:contact@harmonie-autonomie.fr"
                 className="inline-flex items-center gap-2 bg-[#fdc81e] text-[#0959a1] px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all"
               >
                 <Mail className="w-5 h-5" />

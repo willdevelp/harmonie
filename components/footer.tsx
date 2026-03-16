@@ -195,10 +195,10 @@ export default function Footer() {
                 <div>
                   <div className="text-sm text-white/60">Email</div>
                   <a
-                    href="mailto:laetitia@harmonie-autonomie.fr"
+                    href="mailto:contact@harmonie-autonomie.fr"
                     className="hover:text-[#fdc81e] transition-colors break-all"
                   >
-                    laetitia@harmonie-autonomie.fr
+                    contact@harmonie-autonomie.fr
                   </a>
                 </div>
               </div>
@@ -211,8 +211,8 @@ export default function Footer() {
                   <div className="text-sm text-white/60">Adresse</div>
                   <p>
                     123 Rue des Services
-                    <br />
-                    75001 Paris
+                    {/* <br />
+                    75001 Paris */}
                   </p>
                 </div>
               </div>
@@ -224,9 +224,9 @@ export default function Footer() {
                 <div>
                   <div className="text-sm text-white/60">Horaires</div>
                   <p>
-                    7j/7, 24h/24
-                    <br />
-                    Service d&apos;urgence disponible
+                    7j/7, 12h/24
+                    {/* <br />
+                    Service d&apos;urgence disponible */}
                   </p>
                 </div>
               </div>

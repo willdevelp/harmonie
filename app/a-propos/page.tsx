@@ -309,7 +309,7 @@ export default function APropos() {
             >
               <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/hand.jpeg"
+                  src="/baby.jpeg"
                   alt="Accompagnement personnalisé"
                   fill
                   className="object-cover"
@@ -514,7 +514,7 @@ export default function APropos() {
       </section>
 
       {/* TEAM SECTION */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -613,7 +613,7 @@ export default function APropos() {
             </Link>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA SECTION */}
       <section className="py-20 bg-[#0959a1] relative overflow-hidden">

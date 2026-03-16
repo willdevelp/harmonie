@@ -73,7 +73,7 @@ export default function Services() {
         "Développement de l'autonomie",
         "Approche bienveillante et adaptée",
       ],
-      image: "/ladies.jpeg",
+      image: "/children.jpeg",
       color: "bg-green-50",
     },
     {
@@ -89,7 +89,7 @@ export default function Services() {
         "Soutien à l'organisation familiale",
         "Écoute et conseils personnalisés",
       ],
-      image: "/hand.jpeg",
+      image: "/baby.jpeg",
       color: "bg-purple-50",
     },
     {
@@ -121,7 +121,7 @@ export default function Services() {
         "Accompagnement dans les démarches",
         "Suivi personnalisé du parcours",
       ],
-      image: "/window.svg",
+      image: "/listen.jpg",
       color: "bg-orange-50",
     },
   ];
@@ -369,11 +369,11 @@ export default function Services() {
                   </ul>
                 </div>
 
-                {index < process.length - 1 && (
+                {/* {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
                     <ArrowRight className="w-8 h-8 text-[#fdc81e]" />
                   </div>
-                )}
+                )} */}
               </motion.div>
             ))}
           </div>

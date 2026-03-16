@@ -135,7 +135,7 @@ Ce projet est la propriété d'Harmonie & Autonomie. Tous droits réservés.
 
 Pour toute question concernant ce projet :
 
-- **Email** : laetitia@harmonie-autonomie.fr
+- **Email** : contact@harmonie-autonomie.fr
 - **Téléphone** : 07 43 58 72 81
 
 ---

@@ -75,15 +75,15 @@ export default function Home() {
   const testimonials = [
     {
       name: "Marie Dupont",
-      role: "Fille de Mme Dupont, 82 ans",
+      role: "Mère de Jean, 3 ans",
       feedback:
-        "Grâce à Harmonie & Autonomie, ma mère peut rester chez elle en toute sécurité. Le personnel est formidable et toujours à l'écoute.",
+        "Grâce à Harmonie & Autonomie, mon fils autiste commence à discuter avec les autres enfants et s'adapter aux situations sociales.",
       rating: 5,
       image: "/boy.jpeg",
     },
     {
       name: "Jean Martin",
-      role: "Fils de M. Martin, 78 ans",
+      role: "Père de Sophie, 8 ans",
       feedback:
         "Service impeccable et très professionnel. Les intervenants sont ponctuels, compétents et d'une grande gentillesse. Je recommande vivement.",
       rating: 5,
@@ -91,9 +91,9 @@ export default function Home() {
     },
     {
       name: "Sophie Bernard",
-      role: "Fille de Mme Bernard, 75 ans",
+      role: "Mère de Pierre, 15 ans",
       feedback:
-        "Une équipe à l'écoute et très compétente. Ils ont vraiment amélioré la qualité de vie de mon père. Un grand merci à toute l'équipe.",
+        "Une équipe à l'écoute et très compétente. Ilsnous ont permis de mieux communiquer avec Pierre. Un grand merci à toute l'équipe.",
       rating: 5,
       image: "/ladies.jpeg",
     },
@@ -171,13 +171,12 @@ export default function Home() {
               </span>
 
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-                L&apos;aide à domicile qui <br />
-                <span className="text-[#fdc81e]">prend soin de vous</span>
+                Favoriser <span className="text-[#fdc81e]">l&apos;autonomie</span>, <span className="text-[#fdc81e]">l&apos;épanouissement</span> et <span className="text-[#fdc81e]">l&apos;inclusion</span> des enfants <br />
+                {/* <span className="text-[#fdc81e]">prend soin de vous</span> */}
               </h1>
 
               <p className="text-xl text-white/90 mb-8 max-w-lg">
-                Services professionnels pour personnes âgées et en situation de
-                handicap. Une équipe dédiée à votre bien-être 7j/7.
+                Services professionnels pour  vos enfants à travers un accompagnement éducatif humain et adapté. Une équipe dédiée à votre bien-être 7j/7.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -250,7 +249,7 @@ export default function Home() {
                       <Heart className="text-[#0959a1] w-6 h-6" />
                     </div>
                     <div>
-                      <div className="font-bold text-[#0959a1]">+15 ans</div>
+                      <div className="font-bold text-[#0959a1]">+10 ans</div>
                       <div className="text-gray-600">d&apos;expérience</div>
                     </div>
                   </div>
@@ -261,7 +260,7 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        {/* <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white"
@@ -269,7 +268,7 @@ export default function Home() {
           <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </section>
 
       {/* STATS SECTION */}
@@ -357,7 +356,7 @@ export default function Home() {
                 À propos
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold text-[#0959a1] mb-6">
-                Une expertise au service de votre bien-être
+                Une expertise au service du bien-être de vos enfants
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 Fondée par{" "}
